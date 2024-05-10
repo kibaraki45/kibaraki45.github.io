@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	<a href="https://www.freepik.com/free-photo/abstract-textured-backgound_12072961.htm#query=dark%20grey%20gradient%20background&position=10&from_view=keyword&track=ais&uuid=7fe4e9c1-0e49-41f7-8cb0-74528ec16a81">
+	Image by benzoix</a> on Freepik
+-->
+<html>
+	<head>
+		<title>Kurt Ibaraki</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		/* Adjust image size for slideshow with ID slideshow2 */
+		#slideshow2 img {
+			background-size: cover;
+		background-position: center; 
+			}
+			
+
+			/* Styles for slideshow */
+			/* Limit maximum width for images */
+		/* Set a fixed size for the images */
+		.mySlides img {
+			max-width: 100%; /* Adjust as necessary */
+			max-height: 10%;
+			display: block; /* Prevent inline layout issues */
+    		margin: 0 auto; /* Center the image horizontally */
+		}
+
+		/* Ensure the slideshow container has a fixed size */
+		.slideshow-container {
+			width: 350px; /* Adjust as necessary */
+			height: 200px;
+			margin: 0 auto; /* Center the container horizontally */
+			position: relative;
+		}
+
+		/* Position the arrow buttons */
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: 50px; /* Fixed width */
+			height: 50px; /* Fixed height */
+			margin-top: -25px; /* Half of the height */
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+			border-radius: 50%; /* Make the buttons circular */
+			text-align: center;
+			line-height: 50px; /* Center the text vertically */
+		}
+
+		.prev {
+			left: -40px;
+		}
+
+		.next {
+			right: -40px;
+		}
+
+			/* Style the dots */
+			.dot {
+				cursor: pointer;
+				height: 15px;
+				width: 15px;
+				margin: 0 3px;
+				margin-top: 10%;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+				background-color: #717171;
+			}
+			.modal {
+				display: none;
+				position: fixed;
+				z-index: 1;
+				padding-top: 50px;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgb(72, 0, 0);
+				background-color: rgba(19, 62, 179, 0.9);
+			}
+
+			.modal-content {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 800px;
+				max-height: 80%;
+			}
+
+			.close {
+				position: absolute;
+				top: 20px; /* Adjust to move closer to the image */
+				left: 20px; /* Adjust to move closer to the image */
+				width: 40px; /* Adjust size of the button */
+				height: 40px; /* Adjust size of the button */
+				border-radius: 50%; /* Makes the button round */
+				background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+				color: white;
+				font-size: 50px; /* Adjust size of the "x" */
+				font-weight: bold;
+				text-align: center;
+				line-height: 40px; /* Centers the "x" vertically */
+				cursor: pointer;
+				transition: background-color 0.3s, color 0.3s;
+			}
+
+			.close:hover {
+				background-color: rgba(255, 255, 255, 0.7); /* Change background color on hover */
+				color: black;
+			}
+			.close:focus {
+				color: #bbb;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			.mySlides {
+				display: none;
+			}
+
+			.mySlides:first-child {
+				display: block;
+}
+
+		</style>
+
+	</head>
+	<body class="is-preload">
+		<script>
+				function openModal(imgElement) {
+				var modal = document.getElementById("myModal");
+				var modalImg = document.getElementById("modalImg");
+				modal.style.display = "block";
+				modalImg.src = imgElement.src;
+				document.addEventListener("keydown", closeModalOnEscape);
+
+				// Close the modal if user clicks outside the image
+				modal.onclick = function(event) {
+					if (event.target === modal) {
+						closeModal();
+					}
+					};
+				}
+
+				// Close the modal
+				function closeModal() {
+					var modal = document.getElementById("myModal");
+					modal.style.display = "none";
+					document.removeEventListener("keydown", closeModalOnEscape);
+				}
+
+				// Close the modal if Escape key is pressed
+				function closeModalOnEscape(event) {
+					if (event.key === "Escape") {
+						closeModal();
+					}
+				}
+		</script>
+
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Kurt Ibaraki <br> Portfolio<br />
+						</h1>
+						<p>Hello! I'm Kurt, a recent graduate with a passion for software engineering <br>and a strong desire to make a meaningful impact in the tech industry. <br>As a diligent learner and a dedicated problem-solver, I am excited to showcase <br> my skills, projects, and enthusiasm for software development through this portfolio.</p>
+						<ul class="actions">
+							<li><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li class="active"><a href = "index.html"> Projects</a></li>
+						<li><a href="resume.html">Resume</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/kurt-ibaraki/" class='fab fa-linkedin-in'><span class="label"></span></a></li>        
+						<li><a href="https://github.com/kibaraki45" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</nav>
+				
+				
+				
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+
+						<!-- Posts -->
+							<section class="posts">
+
+								<article>
+									<header>
+										<h2><a>Housing Info Project</a></h2>
+									</header>
+									<div class="slideshow-container" id="slideshow1">
+										<div class="mySlides fade">
+											<img src="images/housing_project/hp0.png" alt="Image 1" onclick="openModal(this)">
+										</div>
+										
+										<div class="mySlides fade">
+											<img src="images/housing_project/hp1_1.png" alt="Image 2" onclick="openModal(this)">
+										</div>
+										<div class="mySlides fade">
+											<img src="images/housing_project/hp2.png" alt="Image 3" onclick="openModal(this)">
+										</div>
+								
+										<div class="mySlides fade">
+											<img src="images/housing_project/hp4.png" alt="Image 4" onclick="openModal(this)">
+										</div>
+										<!-- Add more images here with the same structure -->
+										<!-- Navigation arrows -->
+										<a class="prev" onclick="plusSlides(-1, 'slideshow1')">&#10094;</a>
+										<a class="next" onclick="plusSlides(1, 'slideshow1')">&#10095;</a>
+									</div>
+									<br>
+									<!-- Dots indicating which picture you're on -->
+									<div style="text-align:center">
+										<span class="dot" onclick="currentSlide(1, 'slideshow1')"></span>
+										<span class="dot" onclick="currentSlide(2, 'slideshow1')"></span>
+										<span class="dot" onclick="currentSlide(3, 'slideshow1')"></span>
+										<span class="dot" onclick="currentSlide(4, 'slideshow1')"></span>
+										
+									
+										<!-- Add more dots here as per the number of images -->
+									</div>
+									<div id="myModal" class="modal">
+										<span class="close" onclick="closeModal()">&times;</span>
+										<img class="modal-content" id="modalImg">
+									</div>
+									<script src="slideshow.js"></script>
+									<!-- Make sure to link your JavaScript file here -->
+									<p>An application that takes in housing information and displays it along with some common statistics among the housing data. Utilizes NodeJs front-end, Flask back-end, and MySQL </p>
+									<ul class="actions special">
+										<li><a href='https://github.com/kibaraki45/Housing-Info' class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								
+								<article>
+									<header>
+										<h2><a>Job Comparison App</a></h2>
+									</header>
+									<div class="slideshow-container" id="slideshow2">
+										<div class="mySlides fade">
+											<img src="images/job_app/ui1.png" width="250" 
+											height="250" alt="Image 1" onclick="openModal(this)">
+										</div>
+										
+										<div class="mySlides fade">
+											<img src="images/job_app/ui2.png" width="250" 
+											height="250"alt="Image 2" onclick="openModal(this)">
+										</div>
+										<div class="mySlides fade">
+											<img src="images/job_app/ui3.png" width="250" 
+											height="250"alt="Image 3" onclick="openModal(this)">
+										</div>
+								
+										<!-- Add more images here with the same structure -->
+										<!-- Navigation arrows -->
+										<a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
+										<a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
+									</div>
+									<br>
+									<!-- Dots indicating which picture you're on -->
+									<div style="text-align:center">
+										<span class="dot" onclick="currentSlide(1, 'slideshow2')"></span>
+										<span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+										<span class="dot" onclick="currentSlide(3, 'slideshow2')"></span>
+										<span class="dot" onclick="currentSlide(4, 'slideshow2')"></span>
+										<span class="dot" onclick="currentSlide(5, 'slideshow2')"></span>
+										<span class="dot" onclick="currentSlide(6, 'slideshow2')"></span>
+										
+									
+										<!-- Add more dots here as per the number of images -->
+									</div>
+									<div id="myModal" class="modal">
+										<span class="close" onclick="closeModal()">&times;</span>
+										<img class="modal-content" id="modalImg">
+									</div>
+									<script src="slideshow.js"></script>
+									<!-- Make sure to link your JavaScript file here -->
+									<p>An application that takes in job offer information and compares it to other job offers. Utilizes Android Studio, Java, and SQLite</p>
+									<ul class="actions special">
+										<li><a href="https://gitfront.io/r/kibaraki45/HdgfowVADZgx/Job-Comparison-Application/tree/JobCompare6300/app/src/main/java/edu/gatech/seclass/jobcompare6300/" class="button">View Project</a></li>
+									</ul>
+								</article>
+								
+								<article>
+									<header>
+										<h2><a>Stock Market Simulator</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/stock.jpeg"  alt="" /></a>
+									<p>This project uses a random forest learner to predict when to buy and sell stocks. Utilizes Python, NumPy, Pandas, and Machine Learning</p>
+									<ul class="actions special">
+										<li><a href="https://gitfront.io/r/kibaraki45/vWmvUk4qL2xT/ML4T/tree/marketsim/" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<h2><a>Dodgeball Simulator</a></h2>
+									</header>
+									<video width="430" height="335" controls>
+										<source src="/videos/dodgeball.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+									<p>This project implements Game AI mechanics using predictive projectile motion and state machines to guide the NPC through a game of dodgeball. Utilizes Unity, C#, and Finite State Machine </p>
+									<ul class="actions special">
+										<li><a href="https://github.com/kibaraki45/dodgeball_AI" class="button">View Project</a></li>
+									</ul>
+									
+								</article>
+
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Ante mattis<br />
+										interdum dolor</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+								</article> 
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Ante mattis<br />
+										interdum dolor</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">View Project</a></li>
+									</ul>
+								</article> 
+								
+							</section>
+
+						<!-- Footer
+							<footer>
+								<div class="pagination">
+									<a href="#" class="previous">Prev</a>
+									<a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a>
+								</div>
+							</footer> -->
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<h3>Location</h3>
+						<p><a href='https://www.google.com/maps/place/Costa+Mesa,+CA/@33.6636081,-117.9093443,13z/data=
+						!3m1!4b1!4m6!3m5!1s0x80dcdf6ffc576f79:0xef018412d803c0da!8m2!3d33.6638439!4d-117.9047429!16zL20vMHIyYnY?
+						entry=ttu'> Costa Mesa,CA 92626 </a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href='mailt&#111;&#58;k&#105;ba%72%6&#49;ki4%35&#64;gmail&#46;com'>ki&#98;&#97;raki&#52;&#53;&#64;
+						&#103;&#109;&#97;i&#108;&#46;c&#111;m</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="https://www.linkedin.com/in/kurt-ibaraki/" class='fab fa-linkedin-in'><span class="label"></span></a></li>
+							<li><a href="https://github.com/kibaraki45" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</footer>
+				
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						Photo by <a href="https://unsplash.com/@agk42?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alex Knight</a> on <a href="https://unsplash.com/photos/lighted-chinese-lantern-5-GNa303REg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+					</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
